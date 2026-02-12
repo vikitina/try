@@ -1,0 +1,98 @@
+.dealers {
+  margin-bottom: 36px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    position: relative;
+    padding: 93px 0 107px;
+  }
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 20px 0;
+  margin: 0 0 26px 0;
+
+  @media (min-width: 768px) {
+    padding: 59px 70px 41px 71px;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 3;
+    left: calc(50% - 610px);
+    padding: 61px 79px 55px;
+    width: 566px;
+  }
+}
+
+.content {
+  text-decoration: none;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  width: 133px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    min-width: 170px;
+  }
+}
+
+.address {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  width: 140px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 160px;
+  }
+}
+
+.address span {
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+    display: block;
+  }
+}
+
+.map {
+  display: block;
+  width: 100%;
+  height: 366px;
+  background-image: url("../../../public/images/footer/map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+  }
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}

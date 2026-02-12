@@ -1,0 +1,140 @@
+.header {
+  padding-top: 67px;
+  position: relative;
+  background: url("/public/images/logo/mobile-bg.svg") no-repeat center 23px;
+  z-index: 10;
+
+  @media (min-width: 768px) {
+    padding: 40px 30px 25px 251px;
+    background: none;
+  }
+
+  @media(min-width: 1440px) {
+    width: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 75px 0 20px 610px;
+    min-height: 128px;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+  @media (min-width: 768px) {
+    top: 20px;
+    left: 30px;
+  }
+
+  @media(min-width: 1440px) {
+    top: 55px;
+    left: 0;
+  }
+}
+
+.menu {
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid red;
+  display: none;
+
+  @media (min-width: 768px) {
+    position: static;
+    width: auto;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  @media(min-width: 1440px) {
+    background: none;
+  }
+}
+
+.item {
+  border-bottom: 1px solid red;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
+}
+
+.link {
+  display: block;
+  padding: 30px 5px;
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.toggle {
+  position: absolute;
+  top: -44px;
+  right: 22px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  background-image: var(--burger-closed);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 5;
+  border: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.opened .list {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.opened .toggle {
+  background-image: var(--burger-opened);
+}
+
+.active {
+  @media (min-width: 768px) {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgba(0, 0, 0, 0.5);
+    text-decoration-thickness: 2px;
+  }
+}
+
+.home .link {
+  @media (min-width: 1440px) {
+    color: #ffffff;
+    text-decoration-color: rgba(255, 255, 255, 0.5);
+
+  }
+}

@@ -1,0 +1,119 @@
+.slider {
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  position: relative;
+
+  @media (min-width: 768px) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: width 2s ease;
+  background: #eaeaea;
+
+  @media (min-width: 768px) {
+    &::before {
+      content: "";
+      z-index: 1;
+      width: 100%;
+      height: 150px;
+      background: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  @media (min-width: 1440px) {
+    background-color: #F2F2F2;
+    &::before {
+      height: 132px;
+    }
+  }
+}
+
+.screenBefore {
+  z-index: 5;
+  width: 50%;
+}
+
+.image {
+  position: relative;
+  z-index: 3;
+}
+
+.before .screenBefore {
+  width: 100%;
+}
+
+.after .screenBefore {
+  width: 0;
+}
+
+.control {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 15;
+  border-radius: 50%;
+  background-color: blue;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: left 2s ease;
+  border: none;
+
+  &::before {
+    content: "";
+    height: 256px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background: orange;
+  }
+
+  &:hover::before {
+    background: orange;
+  }
+
+  @media (min-width: 768px) {
+    &::before {
+      height: 512px;
+    }
+  }
+}
+
+.before .control {
+  left: 100%;
+}
+
+.after .control {
+  left: 0;
+}

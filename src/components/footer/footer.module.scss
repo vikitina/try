@@ -1,0 +1,126 @@
+.footer {
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 62px 30px 46px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+  }
+}
+
+.container {
+  @media (min-width: 1440px) {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logoLink {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid red;
+  margin: 19px;
+  padding: 0 0 15px 0;
+
+  @media (min-width: 768px) {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.cat {
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 600px;
+}
+
+.social {
+}
+
+.socialList {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid red;
+  padding: 2px 75px 21px;
+  margin: 0 19px 17px 19px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    border: none;
+    width: 128px;
+    gap: 24px;
+    margin: 0 0 0 31px;
+  }
+}
+
+.link {
+  width: 28px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+
+  &:hover {
+    color: var(--thema);
+  }
+
+  &:focus {
+    color: var(--thema);
+    outline: none;
+  }
+
+  &:active {
+    color: var(--thema);
+    outline: none;
+    filter: brightness(0.8);
+  }
+
+  @media (min-width: 768px) {
+  }
+}
+
+.icon {
+  background: url("./public/footer/image/icon/i-1.svg") no-repeat center;
+  content: "";
+  top: 0;
+  left: 0;
+}
+
+.academyFooter {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    width: 162px;
+    padding-top: 0;
+  }
+}
+
+.text {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.logotype {
+}
+
+.logo {
+}
+
+.academy {
+  width: 27;
+  height: 34;
+  opacity: 1;
+}

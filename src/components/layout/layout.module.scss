@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.home {
+  @media (min-width: 1440px) {
+    &::before {
+      content: "";
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-color: #48474c;
+      z-index: -10;
+    }
+
+    &::after {
+      content: "";
+      width: 50%;
+      height: 600px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-color: var(--thema);
+      z-index: -5;
+      opacity: 0.85;
+    }
+  }
+}
